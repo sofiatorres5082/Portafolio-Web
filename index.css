@@ -1,0 +1,56 @@
+/*MODIFICA TODOS LOS ELEMENTOS*/
+*{
+    /*Al restablecer margin y padding a 0 al principio de tu hoja de estilos, 
+    estamos eliminando cualquier espaciado predeterminado que los navegadores puedan aplicar.*/
+    margin: 0;  
+    padding: 0;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*BODY*/
+
+body{
+    background-color: mediumpurple;
+}
+
+#header{
+    width: 100%; /*el ancho del header ocupa toda la pantalla*/
+    height: 100vh; /*ocupa el 100% de la altura de la ventana del navegador.*/
+    background-image: url(/Portafolio-Web/Imagenes/);
+    background-size: cover; /* la imagen de fondo debe cubrir completamente el elemento contenedor, sin importar las proporciones de la imagen. */
+    background-position: center; /* la imagen se posicionará en el centro del contenedor tanto horizontal como verticalmente.*/
+}
+
+#container{
+    padding: 10px 10%; /*espacio entre el contenido y la "pared" del elemento.*/
+}
+
+nav{
+    display: flex; /*ESTABLECE A NAV COMO CONTENEDOR FLEXIBLE. los elementos dentro de nav se organicen de acuerdo con las reglas de Flexbox.*/
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila o columna si el espacio es insuficiente */
+
+}
+
+nav ul li{
+    display: inline-block; /*ocupa todo el ancho disponible de su contenedor y permite que otros elementos aparezcan en línea con él.*/
+    list-style: none; /* Elimina los puntos de la lista desordenada */
+    margin: 10px 20px;
+}
+
+nav ul li a{ /*a porque es del link del anclaje*/
+
+    color: white; 
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    letter-spacing: -0.5px; /*espacio entre letras*/ 
+   
+
+}
